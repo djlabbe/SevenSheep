@@ -1,6 +1,6 @@
 //
-//  SleepioTests.swift
-//  SleepioTests
+//  SevenSheepTests.swift
+//  SevenSheepTests
 //
 //  Created by Douglas Labbe on 10/23/18.
 //  Copyright © 2018 Oh Baby Consulting, LLC. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import Sleepio
 
-class SleepioTests: XCTestCase {
+class SevenSheepTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
