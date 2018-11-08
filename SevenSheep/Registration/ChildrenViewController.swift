@@ -52,7 +52,7 @@ class ChildrenViewController: UIViewController, ChildCreationDelegate, UITableVi
         } else {
             SVProgressHUD.show()
             let user = User(firstName: firstName!, lastName: lastName!, email: email! )
-            self.db.collection("users").addDocument(data: user.dictionary) { err in
+            self.db.collection("users").document(userId!).setData(user.dictionary) { err in
                 SVProgressHUD.dismiss()
                 if err != nil {
                     let errorCode = AuthErrorCode(rawValue: err!._code)

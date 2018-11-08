@@ -23,6 +23,7 @@ class MasterTableViewController: UITableViewController, UISplitViewControllerDel
     let db = Firestore.firestore()
     
     override func awakeFromNib() {
+        super.awakeFromNib()
         splitViewController?.delegate = self
     }
     
