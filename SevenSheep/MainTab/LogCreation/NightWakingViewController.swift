@@ -20,6 +20,7 @@ class NightWakingViewController: FormViewController, LogForm {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.separatorColor = UIColor(named: "peach")
         self.renderForm()
     }
     
@@ -30,46 +31,84 @@ class NightWakingViewController: FormViewController, LogForm {
                 $0.options = childData!.map {$0.name}
                 $0.tag = "activeChild"
                 $0.value = childData!.count > 0 ? childData![0].name : nil
+                }.cellUpdate { cell, row in
+                    cell.tintColor = UIColor(named: "peach")
             }
-            <<< DateRow() {
+            <<< DateInlineRow() {
                 $0.title = "Date"
                 $0.tag = "date"
                 $0.value = Date()
+                }.cellUpdate { cell, row in
+                    cell.tintColor = UIColor(named: "peach")
             }
             +++ Section ("Night Waking")
-            <<< TimeRow() {
+            <<< TimeInlineRow() {
                 $0.title = "Awoke"
                 $0.tag = "wakeTime"
-                $0.value = Date()
+                }.cellUpdate { cell, row in
+                    cell.tintColor = UIColor(named: "peach")
             }
-            <<< TimeRow() {
+            <<< TimeInlineRow() {
                 $0.title = "Back asleep"
                 $0.tag = "asleepTime"
-                $0.value = Date()
+                }.cellUpdate { cell, row in
+                    cell.tintColor = UIColor(named: "peach")
             }
             +++ Section("Notes")
             <<< TextAreaRow(){
                 $0.tag = "notes"
                 $0.value = ""
                 $0.placeholder = self.notesPlaceholderText
+                }.cellUpdate { cell, row in
+                    cell.tintColor = UIColor(named: "peach")
             }
             +++ Section()
             <<< ButtonRow(){
                 $0.title = "Submit"
                 }.onCellSelection() { cell, row in
-                    SVProgressHUD.show()
+                    
+                    var values = self.form.values()
+                    
+                    guard let childName = values["activeChild"] as? String else {
+                        self.displayAlert(title: "Error", message: "Please select a child.", buttonLabel: "Dismiss")
+                        return
+                    }
+                    
+                    guard let date = values["date"] as? Date else {
+                        self.displayAlert(title: "Error", message: "Please enter a date.", buttonLabel: "Dismiss")
+                        return
+                    }
+                    
+                    guard let wakeTime = values["wakeTime"] as? Date else {
+                        self.displayAlert(title: "Error", message: "Please enter the time your woke up.", buttonLabel: "Dismiss")
+                        return
+                    }
+                    
+                    guard let asleepTime = values["asleepTime"] as? Date else {
+                        self.displayAlert(title: "Error", message: "Please enter the time your child fell back asleep.", buttonLabel: "Dismiss")
+                        return
+                    }
+                    
+                    
+                    if !( asleepTime > wakeTime) {
+                        self.displayAlert(title: "Error", message: "Woops, it looks like your times are out of order. Please try again.", buttonLabel: "Dismiss")
+                        return
+                    }
+                    
+                    let notes = values["notes"] as? String
+                    
+                    let newLog = NightWakingLog(
+                        childId: self.getChildId(fromName: childName)!,
+                        childName: childName,
+                        date:  date,
+                        wakeTime: wakeTime,
+                        asleepTime:  asleepTime,
+                        notes:  notes ?? ""
+                    )
+                    
+                    
                     if (Auth.auth().currentUser?.uid) != nil {
-                        var logEntry = self.form.values()
-                        
-                        let newLog = NightWakingLog(
-                            childId: self.getChildId(fromName: logEntry["activeChild"] as! String)!,
-                            childName: logEntry["activeChild"] as! String,
-                            date:  logEntry["date"] as! Date,
-                            wakeTime: logEntry["wakeTime"] as! Date,
-                            asleepTime:  logEntry["asleepTime"] as! Date,
-                            notes:  logEntry["notes"] as! String
-                        )
-                        
+                        SVProgressHUD.show()
                         self.db.collection("logs").addDocument(data: newLog.dictionary) { err in
                             SVProgressHUD.dismiss()
                             if err != nil {
@@ -79,14 +118,19 @@ class NightWakingViewController: FormViewController, LogForm {
                             }
                         }
                     }
+                }.cellUpdate { cell, row in
+                    cell.backgroundColor = UIColor(named: "peach")
+                    cell.textLabel?.textColor = .white
             }
             +++ Section()
             <<< ButtonRow(){
                 $0.title = "Cancel"
                 }.cellUpdate { cell, row in
-                    cell.textLabel?.textColor = UIColor.red
+                    cell.backgroundColor = .white
+                    cell.textLabel?.textColor = UIColor(named: "peach")
                 }.onCellSelection() { cell, row in
                     self.dismiss(animated: true, completion: nil)
         }
     }
 }
+

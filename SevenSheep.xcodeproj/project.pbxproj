@@ -45,6 +45,8 @@
 		FAB5DD5B21819A4500115C2F /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5A21819A4500115C2F /* PasswordViewController.swift */; };
 		FAB5DD5D21819A7200115C2F /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5C21819A7200115C2F /* NameViewController.swift */; };
 		FAB5DD5F21819A8400115C2F /* ChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5E21819A8400115C2F /* ChildrenViewController.swift */; };
+		FADB4A5521973E5100651C63 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4A5421973E5100651C63 /* MainTabBarViewController.swift */; };
+		FADB4A572197DF0E00651C63 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */; };
 		FAF429B521895A3000283BA7 /* WakeUpLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF429B421895A3000283BA7 /* WakeUpLog.swift */; };
 		FAF429B721895B6E00283BA7 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF429B621895B6E00283BA7 /* Log.swift */; };
 		FAF429B9218A9B3100283BA7 /* NapLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF429B8218A9B3100283BA7 /* NapLog.swift */; };
@@ -121,6 +123,8 @@
 		FAB5DD5A21819A4500115C2F /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		FAB5DD5C21819A7200115C2F /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		FAB5DD5E21819A8400115C2F /* ChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenViewController.swift; sourceTree = "<group>"; };
+		FADB4A5421973E5100651C63 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		FAF429B421895A3000283BA7 /* WakeUpLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpLog.swift; sourceTree = "<group>"; };
 		FAF429B621895B6E00283BA7 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		FAF429B8218A9B3100283BA7 /* NapLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapLog.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 				FA11EEAC21856BCE009FF208 /* LogCreation */,
 				FA2BFEBD218404F100B32EA3 /* Settings */,
 				FA0D206D2182BD9200C3F804 /* MainTab.storyboard */,
+				FADB4A5421973E5100651C63 /* MainTabBarViewController.swift */,
 			);
 			path = MainTab;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			children = (
 				FA2BFEC22184073000B32EA3 /* Settings.storyboard */,
 				FA2BFEBB2183FEA400B32EA3 /* SettingsTableViewController.swift */,
+				FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -619,6 +625,7 @@
 				FA59DB4E218C22EB00997247 /* ResetPasswordViewController.swift in Sources */,
 				FA2BFEBC2183FEA400B32EA3 /* SettingsTableViewController.swift in Sources */,
 				FA869659218417BE00CD2BF1 /* MorningWakeUpViewController.swift in Sources */,
+				FADB4A572197DF0E00651C63 /* ChangePasswordViewController.swift in Sources */,
 				FA8696682184CF4800CD2BF1 /* AddChildViewController.swift in Sources */,
 				FAF429B521895A3000283BA7 /* WakeUpLog.swift in Sources */,
 				FA120F982188317C004F9532 /* LocalCollection.swift in Sources */,
@@ -640,6 +647,7 @@
 				FA86966A218523EB00CD2BF1 /* Child.swift in Sources */,
 				FA2BFE6E2182C67A00B32EA3 /* AuthErrorCode.swift in Sources */,
 				FAF429BB218A9C5F00283BA7 /* BedtimeLog.swift in Sources */,
+				FADB4A5521973E5100651C63 /* MainTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

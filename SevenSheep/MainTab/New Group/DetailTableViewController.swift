@@ -107,7 +107,6 @@ class DetailTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "logCell", for: indexPath) as! LogEntryTableViewCell
         
         let log = tableData[indexPath.section].sectionItems[indexPath.row]
-//        let dateStr = log.date.toFormattedString(forLocale: timeLocale, withDateStyle: .long, withTimeStyle: .none)
         
         switch log.type {
         case WakeUpLog.typeStr:
@@ -156,12 +155,18 @@ class DetailTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         if let headerView = view as? UITableViewHeaderFooterView {
-            headerView.contentView.backgroundColor = UIColor(named: "night-color")?.withAlphaComponent(0.5)
+            headerView.contentView.backgroundColor = UIColor.darkGray
             headerView.textLabel?.textColor = .white
         }
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let log = tableData[indexPath.section].sectionItems[indexPath.row]
+        let message = log.notes == "" ? "No notes" : log.notes
+        self.displayAlert(title: "Notes", message: message, buttonLabel: "Dismiss")
     }
 }

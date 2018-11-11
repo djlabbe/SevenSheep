@@ -55,11 +55,6 @@ class MasterTableViewController: UITableViewController, UISplitViewControllerDel
                             self.childIds.append(document.documentID)
                         }
                     }
-                    /* Testing out auto segue if only one child -- seems bad UX.
-                       Want to go directly to that view instead. */
-//                    if (self.userChildren.count == 1) {
-//                        self.performSegue(withIdentifier: "showDetail", sender: self)
-//                    }
                     
                     self.tableView.reloadData()
                 }
@@ -78,12 +73,7 @@ class MasterTableViewController: UITableViewController, UISplitViewControllerDel
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             let controller = segue.destination as! DetailTableViewController
-            
-            // For testing auto segue if 1 child
-//            if (userChildren.count == 1) {
-//                 controller.childId = childIds[0]
-//                 controller.childName = userChildren[0].name
-//            }
+        
             if let indexPath = tableView.indexPathForSelectedRow {
                 controller.childId = childIds[indexPath.row]
                 controller.childName = userChildren[indexPath.row].name

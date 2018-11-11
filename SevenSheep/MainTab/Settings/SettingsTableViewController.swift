@@ -20,7 +20,7 @@ class SettingsTableViewController: UITableViewController, ChildCreationDelegate 
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 3
     }
     
     
@@ -31,6 +31,8 @@ class SettingsTableViewController: UITableViewController, ChildCreationDelegate 
             presentedVC.delegate = self
             present(presentedVC, animated: true, completion: nil)
         case 1:
+            self.performSegue(withIdentifier: "changePassword", sender: self)
+        case 2:
             do {
                 try Firebase.Auth.auth().signOut()
                 self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
@@ -44,7 +46,7 @@ class SettingsTableViewController: UITableViewController, ChildCreationDelegate 
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 60
     }
     
     // Don't care. New child will be reflected in other views.
