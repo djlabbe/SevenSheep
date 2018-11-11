@@ -251,8 +251,7 @@
 				FA3E6C862186C08B003388EB /* MasterTableViewController.swift */,
 				FA3E6C882186C0B8003388EB /* DetailTableViewController.swift */,
 			);
-			name = History;
-			path = "New Group";
+			path = History;
 			sourceTree = "<group>";
 		};
 		FA8696622184369F00CD2BF1 /* Extensions */ = {
