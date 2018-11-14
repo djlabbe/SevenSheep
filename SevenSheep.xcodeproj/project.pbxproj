@@ -20,9 +20,6 @@
 		FA2BFEBC2183FEA400B32EA3 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BFEBB2183FEA400B32EA3 /* SettingsTableViewController.swift */; };
 		FA2BFEC32184073000B32EA3 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2BFEC22184073000B32EA3 /* Settings.storyboard */; };
 		FA3E6BFE21860E3D003388EB /* LogForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E6BFD21860E3D003388EB /* LogForm.swift */; };
-		FA3E6C852186BFF6003388EB /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3E6C842186BFF6003388EB /* History.storyboard */; };
-		FA3E6C872186C08B003388EB /* MasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E6C862186C08B003388EB /* MasterTableViewController.swift */; };
-		FA3E6C892186C0B8003388EB /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E6C882186C0B8003388EB /* DetailTableViewController.swift */; };
 		FA59DB4A218C0A5A00997247 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA59DB49218C0A5A00997247 /* GoogleService-Info.plist */; };
 		FA59DB4E218C22EB00997247 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59DB4D218C22EB00997247 /* ResetPasswordViewController.swift */; };
 		FA869659218417BE00CD2BF1 /* MorningWakeUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA869658218417BD00CD2BF1 /* MorningWakeUpViewController.swift */; };
@@ -45,14 +42,17 @@
 		FAB5DD5B21819A4500115C2F /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5A21819A4500115C2F /* PasswordViewController.swift */; };
 		FAB5DD5D21819A7200115C2F /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5C21819A7200115C2F /* NameViewController.swift */; };
 		FAB5DD5F21819A8400115C2F /* ChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5E21819A8400115C2F /* ChildrenViewController.swift */; };
+		FACBC3D5219BE351000580C6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3D4219BE351000580C6 /* MasterViewController.swift */; };
+		FACBC3D7219BE370000580C6 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3D6219BE370000580C6 /* DetailTableViewController.swift */; };
+		FACBC3DA219BE3CE000580C6 /* NapLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3D9219BE3CE000580C6 /* NapLog.swift */; };
+		FACBC3DC219BE3DC000580C6 /* WakeUpLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3DB219BE3DC000580C6 /* WakeUpLog.swift */; };
+		FACBC3DE219BE3E4000580C6 /* BedtimeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3DD219BE3E4000580C6 /* BedtimeLog.swift */; };
+		FACBC3E0219BE3F9000580C6 /* NightWakingLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3DF219BE3F9000580C6 /* NightWakingLog.swift */; };
+		FACBC3E2219BE4D4000580C6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3E1219BE4D4000580C6 /* Log.swift */; };
+		FACBC3E4219BE9F6000580C6 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACBC3E3219BE9F6000580C6 /* History.storyboard */; };
 		FADB4A5521973E5100651C63 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4A5421973E5100651C63 /* MainTabBarViewController.swift */; };
 		FADB4A572197DF0E00651C63 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */; };
-		FAF429B521895A3000283BA7 /* WakeUpLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF429B421895A3000283BA7 /* WakeUpLog.swift */; };
-		FAF429B721895B6E00283BA7 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF429B621895B6E00283BA7 /* Log.swift */; };
-		FAF429B9218A9B3100283BA7 /* NapLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF429B8218A9B3100283BA7 /* NapLog.swift */; };
-		FAF429BB218A9C5F00283BA7 /* BedtimeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF429BA218A9C5F00283BA7 /* BedtimeLog.swift */; };
 		FAF429BD218AA36200283BA7 /* LogCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF429BC218AA36200283BA7 /* LogCreation.storyboard */; };
-		FAF429BF218AAA8C00283BA7 /* NightWakingLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF429BE218AAA8C00283BA7 /* NightWakingLog.swift */; };
 		FAF429C1218AAC7F00283BA7 /* NightWakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF429C0218AAC7F00283BA7 /* NightWakingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,9 +92,6 @@
 		FA2BFEBB2183FEA400B32EA3 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		FA2BFEC22184073000B32EA3 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		FA3E6BFD21860E3D003388EB /* LogForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogForm.swift; sourceTree = "<group>"; };
-		FA3E6C842186BFF6003388EB /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
-		FA3E6C862186C08B003388EB /* MasterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterTableViewController.swift; sourceTree = "<group>"; };
-		FA3E6C882186C0B8003388EB /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		FA59DB49218C0A5A00997247 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA59DB4D218C22EB00997247 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		FA869658218417BD00CD2BF1 /* MorningWakeUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MorningWakeUpViewController.swift; sourceTree = "<group>"; };
@@ -123,14 +120,17 @@
 		FAB5DD5A21819A4500115C2F /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		FAB5DD5C21819A7200115C2F /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		FAB5DD5E21819A8400115C2F /* ChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenViewController.swift; sourceTree = "<group>"; };
+		FACBC3D4219BE351000580C6 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = SevenSheep/MainTab/History/MasterViewController.swift; sourceTree = SOURCE_ROOT; };
+		FACBC3D6219BE370000580C6 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = ../History/DetailTableViewController.swift; sourceTree = "<group>"; };
+		FACBC3D9219BE3CE000580C6 /* NapLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NapLog.swift; path = SevenSheep/MainTab/History/NapLog.swift; sourceTree = SOURCE_ROOT; };
+		FACBC3DB219BE3DC000580C6 /* WakeUpLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WakeUpLog.swift; path = SevenSheep/MainTab/History/WakeUpLog.swift; sourceTree = SOURCE_ROOT; };
+		FACBC3DD219BE3E4000580C6 /* BedtimeLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BedtimeLog.swift; path = SevenSheep/MainTab/History/BedtimeLog.swift; sourceTree = SOURCE_ROOT; };
+		FACBC3DF219BE3F9000580C6 /* NightWakingLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NightWakingLog.swift; path = SevenSheep/MainTab/History/NightWakingLog.swift; sourceTree = SOURCE_ROOT; };
+		FACBC3E1219BE4D4000580C6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Log.swift; path = SevenSheep/MainTab/History/Log.swift; sourceTree = SOURCE_ROOT; };
+		FACBC3E3219BE9F6000580C6 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		FADB4A5421973E5100651C63 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
-		FAF429B421895A3000283BA7 /* WakeUpLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpLog.swift; sourceTree = "<group>"; };
-		FAF429B621895B6E00283BA7 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
-		FAF429B8218A9B3100283BA7 /* NapLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NapLog.swift; sourceTree = "<group>"; };
-		FAF429BA218A9C5F00283BA7 /* BedtimeLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeLog.swift; sourceTree = "<group>"; };
 		FAF429BC218AA36200283BA7 /* LogCreation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogCreation.storyboard; sourceTree = "<group>"; };
-		FAF429BE218AAA8C00283BA7 /* NightWakingLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWakingLog.swift; sourceTree = "<group>"; };
 		FAF429C0218AAC7F00283BA7 /* NightWakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWakingViewController.swift; sourceTree = "<group>"; };
 		FC004118E223ACCC4C3BD342 /* Pods-SevenSheepTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SevenSheepTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SevenSheepTests/Pods-SevenSheepTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,7 +200,7 @@
 		FA0D206C2182BD6B00C3F804 /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
-				FA3E6C0B21866BCC003388EB /* History */,
+				FACBC3CF219BE2CB000580C6 /* History */,
 				FA11EEAC21856BCE009FF208 /* LogCreation */,
 				FA2BFEBD218404F100B32EA3 /* Settings */,
 				FA0D206D2182BD9200C3F804 /* MainTab.storyboard */,
@@ -241,17 +241,6 @@
 				FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */,
 			);
 			path = Settings;
-			sourceTree = "<group>";
-		};
-		FA3E6C0B21866BCC003388EB /* History */ = {
-			isa = PBXGroup;
-			children = (
-				FAF429B321895A2000283BA7 /* Model */,
-				FA3E6C842186BFF6003388EB /* History.storyboard */,
-				FA3E6C862186C08B003388EB /* MasterTableViewController.swift */,
-				FA3E6C882186C0B8003388EB /* DetailTableViewController.swift */,
-			);
-			path = History;
 			sourceTree = "<group>";
 		};
 		FA8696622184369F00CD2BF1 /* Extensions */ = {
@@ -344,14 +333,26 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FAF429B321895A2000283BA7 /* Model */ = {
+		FACBC3CF219BE2CB000580C6 /* History */ = {
 			isa = PBXGroup;
 			children = (
-				FAF429B421895A3000283BA7 /* WakeUpLog.swift */,
-				FAF429B8218A9B3100283BA7 /* NapLog.swift */,
-				FAF429B621895B6E00283BA7 /* Log.swift */,
-				FAF429BA218A9C5F00283BA7 /* BedtimeLog.swift */,
-				FAF429BE218AAA8C00283BA7 /* NightWakingLog.swift */,
+				FACBC3D8219BE387000580C6 /* Model */,
+				FACBC3D4219BE351000580C6 /* MasterViewController.swift */,
+				FACBC3E3219BE9F6000580C6 /* History.storyboard */,
+				FACBC3D6219BE370000580C6 /* DetailTableViewController.swift */,
+			);
+			name = History;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		FACBC3D8219BE387000580C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FACBC3D9219BE3CE000580C6 /* NapLog.swift */,
+				FACBC3DB219BE3DC000580C6 /* WakeUpLog.swift */,
+				FACBC3DD219BE3E4000580C6 /* BedtimeLog.swift */,
+				FACBC3DF219BE3F9000580C6 /* NightWakingLog.swift */,
+				FACBC3E1219BE4D4000580C6 /* Log.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -467,12 +468,12 @@
 				FAF429BD218AA36200283BA7 /* LogCreation.storyboard in Resources */,
 				FA9EB4732180478800D8B9BE /* Registration.storyboard in Resources */,
 				FA9EB44D218044D200D8B9BE /* LaunchScreen.storyboard in Resources */,
+				FACBC3E4219BE9F6000580C6 /* History.storyboard in Resources */,
 				FA2BFE772182CDC600B32EA3 /* Login.storyboard in Resources */,
 				FA2BFEC32184073000B32EA3 /* Settings.storyboard in Resources */,
 				FA9EB44A218044D200D8B9BE /* Assets.xcassets in Resources */,
 				FA0D206E2182BD9200C3F804 /* MainTab.storyboard in Resources */,
 				FA9EB448218044D200D8B9BE /* Main.storyboard in Resources */,
-				FA3E6C852186BFF6003388EB /* History.storyboard in Resources */,
 				FA59DB4A218C0A5A00997247 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,35 +618,35 @@
 			files = (
 				FA11EEAB218558A1009FF208 /* Trim.swift in Sources */,
 				FA9EB47521804BE800D8B9BE /* RootViewController.swift in Sources */,
+				FACBC3DC219BE3DC000580C6 /* WakeUpLog.swift in Sources */,
+				FACBC3D5219BE351000580C6 /* MasterViewController.swift in Sources */,
 				FAF429C1218AAC7F00283BA7 /* NightWakingViewController.swift in Sources */,
-				FAF429B721895B6E00283BA7 /* Log.swift in Sources */,
 				FA2BFEB82183F75000B32EA3 /* ErrorAlert.swift in Sources */,
+				FACBC3E2219BE4D4000580C6 /* Log.swift in Sources */,
 				FAB5DD5F21819A8400115C2F /* ChildrenViewController.swift in Sources */,
 				FA59DB4E218C22EB00997247 /* ResetPasswordViewController.swift in Sources */,
 				FA2BFEBC2183FEA400B32EA3 /* SettingsTableViewController.swift in Sources */,
 				FA869659218417BE00CD2BF1 /* MorningWakeUpViewController.swift in Sources */,
 				FADB4A572197DF0E00651C63 /* ChangePasswordViewController.swift in Sources */,
 				FA8696682184CF4800CD2BF1 /* AddChildViewController.swift in Sources */,
-				FAF429B521895A3000283BA7 /* WakeUpLog.swift in Sources */,
+				FACBC3E0219BE3F9000580C6 /* NightWakingLog.swift in Sources */,
 				FA120F982188317C004F9532 /* LocalCollection.swift in Sources */,
+				FACBC3D7219BE370000580C6 /* DetailTableViewController.swift in Sources */,
 				FAB5DD5B21819A4500115C2F /* PasswordViewController.swift in Sources */,
 				FA9EB47721804BF800D8B9BE /* EmailViewController.swift in Sources */,
 				FA9EB47921804C0200D8B9BE /* LoginViewController.swift in Sources */,
-				FAF429B9218A9B3100283BA7 /* NapLog.swift in Sources */,
+				FACBC3DE219BE3E4000580C6 /* BedtimeLog.swift in Sources */,
 				FA9EB443218044D200D8B9BE /* AppDelegate.swift in Sources */,
 				FA869664218436BB00CD2BF1 /* StringToDate.swift in Sources */,
-				FA3E6C892186C0B8003388EB /* DetailTableViewController.swift in Sources */,
 				FA86966121841EB700CD2BF1 /* LogSelectViewController.swift in Sources */,
-				FA3E6C872186C08B003388EB /* MasterTableViewController.swift in Sources */,
-				FAF429BF218AAA8C00283BA7 /* NightWakingLog.swift in Sources */,
 				FA86965D218417C400CD2BF1 /* BedtimeViewController.swift in Sources */,
+				FACBC3DA219BE3CE000580C6 /* NapLog.swift in Sources */,
 				FA0D206B2182BC0600C3F804 /* User.swift in Sources */,
 				FA3E6BFE21860E3D003388EB /* LogForm.swift in Sources */,
 				FAB5DD5D21819A7200115C2F /* NameViewController.swift in Sources */,
 				FA86965C218417C400CD2BF1 /* NapViewController.swift in Sources */,
 				FA86966A218523EB00CD2BF1 /* Child.swift in Sources */,
 				FA2BFE6E2182C67A00B32EA3 /* AuthErrorCode.swift in Sources */,
-				FAF429BB218A9C5F00283BA7 /* BedtimeLog.swift in Sources */,
 				FADB4A5521973E5100651C63 /* MainTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,7 +31,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="yuO-Wp-tKI" secondAttribute="height" multiplier="1:1" id="WaK-83-Wlr"/>
                                                         </constraints>
-                                                        <state key="normal" image="morning">
+                                                        <state key="normal" image="log_Morning">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -40,16 +39,17 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xP-V5-svt">
-                                                        <rect key="frame" x="72.666666666666671" y="289" width="62.000000000000014" height="30"/>
+                                                        <rect key="frame" x="67.666666666666671" y="289" width="72.000000000000014" height="33"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <state key="normal" title="Wake-up">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <segue destination="QZU-7c-S3e" kind="presentation" id="gjv-ty-zaC"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" name="morning-color"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="yuO-Wp-tKI" firstAttribute="centerX" secondItem="OJL-ls-7aL" secondAttribute="centerX" id="4Ep-qh-U3M"/>
                                                     <constraint firstItem="0xP-V5-svt" firstAttribute="top" secondItem="yuO-Wp-tKI" secondAttribute="bottom" constant="8" id="8Ug-yX-dFc"/>
@@ -70,7 +70,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="8Fi-vN-UcD" secondAttribute="height" multiplier="1:1" id="3z1-2L-Dai"/>
                                                         </constraints>
-                                                        <state key="normal" image="afternoon">
+                                                        <state key="normal" image="log_Day">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -78,16 +78,17 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GH8-IE-dCM">
-                                                        <rect key="frame" x="88.666666666666686" y="289" width="30" height="30"/>
+                                                        <rect key="frame" x="87" y="289" width="33" height="33"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <state key="normal" title="Nap">
-                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <segue destination="w5P-Bf-0oV" kind="presentation" id="hpP-5y-R4P"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" name="afternoon-color"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="8Fi-vN-UcD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vk5-wN-h1z" secondAttribute="leading" constant="16" id="CiG-Lu-XNw"/>
                                                     <constraint firstItem="GH8-IE-dCM" firstAttribute="centerX" secondItem="vk5-wN-h1z" secondAttribute="centerX" id="Dew-lG-CFz"/>
@@ -125,7 +126,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="umu-ep-h8w" secondAttribute="height" multiplier="1:1" id="b0V-nM-CBX"/>
                                                         </constraints>
-                                                        <state key="normal" image="evening">
+                                                        <state key="normal" image="log_Evening">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -133,16 +134,17 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgR-gA-W6t">
-                                                        <rect key="frame" x="75" y="289" width="57" height="30"/>
+                                                        <rect key="frame" x="70" y="289" width="67" height="33"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <state key="normal" title="Bedtime">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <segue destination="ksr-7U-EVc" kind="presentation" id="wb4-Cs-6Sr"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" name="evening-color"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="umu-ep-h8w" firstAttribute="top" relation="greaterThanOrEqual" secondItem="LQ8-OV-Evt" secondAttribute="top" constant="16" id="Cgq-zs-Vo0"/>
                                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="umu-ep-h8w" secondAttribute="trailing" constant="16" id="DQ4-Pw-cMu"/>
@@ -163,7 +165,7 @@
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="ZR0-is-3Dq" secondAttribute="height" multiplier="1:1" id="9PZ-7G-jL6"/>
                                                         </constraints>
-                                                        <state key="normal" image="night">
+                                                        <state key="normal" image="log-Night">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -171,16 +173,17 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qd-6W-s4D">
-                                                        <rect key="frame" x="57.666666666666686" y="289" width="92" height="30"/>
+                                                        <rect key="frame" x="50" y="289" width="107" height="33"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                         <state key="normal" title="Night Waking">
-                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
                                                             <segue destination="Emc-2S-5GT" kind="presentation" id="VYI-lj-TOs"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" name="night-color"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8qd-6W-s4D" secondAttribute="bottom" constant="16" id="4Bc-Zh-SQk"/>
                                                     <constraint firstItem="8qd-6W-s4D" firstAttribute="top" secondItem="ZR0-is-3Dq" secondAttribute="bottom" constant="8" id="B6c-0q-gQf"/>
@@ -319,23 +322,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="afternoon" width="1000.3333129882812" height="1000.3333129882812"/>
-        <image name="evening" width="1000.3333129882812" height="1000.3333129882812"/>
-        <image name="morning" width="1000.3333129882812" height="1000.3333129882812"/>
-        <image name="night" width="1000.3333129882812" height="1000.3333129882812"/>
+        <image name="log-Night" width="900.239990234375" height="900"/>
+        <image name="log_Day" width="900.239990234375" height="900"/>
+        <image name="log_Evening" width="900.239990234375" height="900"/>
+        <image name="log_Morning" width="900" height="900"/>
         <image name="pencil_icon" width="56.25" height="56.25"/>
-        <namedColor name="afternoon-color">
-            <color red="0.45098039215686275" green="0.37647058823529411" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="evening-color">
-            <color red="0.17647058823529413" green="0.25882352941176473" blue="0.3843137254901961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="morning-color">
-            <color red="0.81568627450980391" green="0.58823529411764708" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="night-color">
-            <color red="0.21176470588235294" green="0.19607843137254902" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="VYI-lj-TOs"/>

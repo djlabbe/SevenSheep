@@ -54,7 +54,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stork_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6mC-kF-Nrg">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addnew" translatesAutoresizingMaskIntoConstraints="NO" id="6mC-kF-Nrg">
                                                     <rect key="frame" x="16" y="7" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="XNo-tv-tC6"/>
@@ -83,7 +83,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="Zjp-rv-hYm">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="changepassword" translatesAutoresizingMaskIntoConstraints="NO" id="Zjp-rv-hYm">
                                                     <rect key="frame" x="16" y="5" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="2dz-mQ-A21"/>
@@ -112,7 +112,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" translatesAutoresizingMaskIntoConstraints="NO" id="Hxo-8k-nUy">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logout" translatesAutoresizingMaskIntoConstraints="NO" id="Hxo-8k-nUy">
                                                     <rect key="frame" x="16" y="5" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="S0k-mM-TKH"/>
@@ -250,7 +250,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addnew" width="37.5" height="37.5"/>
+        <image name="changepassword" width="37.5" height="37.5"/>
+        <image name="logout" width="37.5" height="37.5"/>
         <image name="settings" width="30" height="30"/>
-        <image name="stork_icon" width="37.5" height="37.5"/>
     </resources>
 </document>
