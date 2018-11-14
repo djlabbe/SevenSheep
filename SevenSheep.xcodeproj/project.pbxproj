@@ -49,7 +49,7 @@
 		FACBC3DE219BE3E4000580C6 /* BedtimeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3DD219BE3E4000580C6 /* BedtimeLog.swift */; };
 		FACBC3E0219BE3F9000580C6 /* NightWakingLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3DF219BE3F9000580C6 /* NightWakingLog.swift */; };
 		FACBC3E2219BE4D4000580C6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3E1219BE4D4000580C6 /* Log.swift */; };
-		FACBC3E4219BE9F6000580C6 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACBC3E3219BE9F6000580C6 /* History.storyboard */; };
+		FACBC3E6219BEE13000580C6 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACBC3E5219BEE13000580C6 /* History.storyboard */; };
 		FADB4A5521973E5100651C63 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4A5421973E5100651C63 /* MainTabBarViewController.swift */; };
 		FADB4A572197DF0E00651C63 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */; };
 		FAF429BD218AA36200283BA7 /* LogCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF429BC218AA36200283BA7 /* LogCreation.storyboard */; };
@@ -127,7 +127,7 @@
 		FACBC3DD219BE3E4000580C6 /* BedtimeLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BedtimeLog.swift; path = SevenSheep/MainTab/History/BedtimeLog.swift; sourceTree = SOURCE_ROOT; };
 		FACBC3DF219BE3F9000580C6 /* NightWakingLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NightWakingLog.swift; path = SevenSheep/MainTab/History/NightWakingLog.swift; sourceTree = SOURCE_ROOT; };
 		FACBC3E1219BE4D4000580C6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Log.swift; path = SevenSheep/MainTab/History/Log.swift; sourceTree = SOURCE_ROOT; };
-		FACBC3E3219BE9F6000580C6 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		FACBC3E5219BEE13000580C6 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		FADB4A5421973E5100651C63 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		FAF429BC218AA36200283BA7 /* LogCreation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogCreation.storyboard; sourceTree = "<group>"; };
@@ -338,7 +338,7 @@
 			children = (
 				FACBC3D8219BE387000580C6 /* Model */,
 				FACBC3D4219BE351000580C6 /* MasterViewController.swift */,
-				FACBC3E3219BE9F6000580C6 /* History.storyboard */,
+				FACBC3E5219BEE13000580C6 /* History.storyboard */,
 				FACBC3D6219BE370000580C6 /* DetailTableViewController.swift */,
 			);
 			name = History;
@@ -468,7 +468,7 @@
 				FAF429BD218AA36200283BA7 /* LogCreation.storyboard in Resources */,
 				FA9EB4732180478800D8B9BE /* Registration.storyboard in Resources */,
 				FA9EB44D218044D200D8B9BE /* LaunchScreen.storyboard in Resources */,
-				FACBC3E4219BE9F6000580C6 /* History.storyboard in Resources */,
+				FACBC3E6219BEE13000580C6 /* History.storyboard in Resources */,
 				FA2BFE772182CDC600B32EA3 /* Login.storyboard in Resources */,
 				FA2BFEC32184073000B32EA3 /* Settings.storyboard in Resources */,
 				FA9EB44A218044D200D8B9BE /* Assets.xcassets in Resources */,
