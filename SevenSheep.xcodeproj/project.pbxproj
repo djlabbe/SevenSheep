@@ -122,12 +122,12 @@
 		FAB5DD5E21819A8400115C2F /* ChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenViewController.swift; sourceTree = "<group>"; };
 		FACBC3D4219BE351000580C6 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = SevenSheep/MainTab/History/MasterViewController.swift; sourceTree = SOURCE_ROOT; };
 		FACBC3D6219BE370000580C6 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = ../History/DetailTableViewController.swift; sourceTree = "<group>"; };
-		FACBC3D9219BE3CE000580C6 /* NapLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NapLog.swift; path = SevenSheep/MainTab/History/NapLog.swift; sourceTree = SOURCE_ROOT; };
-		FACBC3DB219BE3DC000580C6 /* WakeUpLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WakeUpLog.swift; path = SevenSheep/MainTab/History/WakeUpLog.swift; sourceTree = SOURCE_ROOT; };
-		FACBC3DD219BE3E4000580C6 /* BedtimeLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BedtimeLog.swift; path = SevenSheep/MainTab/History/BedtimeLog.swift; sourceTree = SOURCE_ROOT; };
-		FACBC3DF219BE3F9000580C6 /* NightWakingLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NightWakingLog.swift; path = SevenSheep/MainTab/History/NightWakingLog.swift; sourceTree = SOURCE_ROOT; };
-		FACBC3E1219BE4D4000580C6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Log.swift; path = SevenSheep/MainTab/History/Log.swift; sourceTree = SOURCE_ROOT; };
-		FACBC3E5219BEE13000580C6 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
+		FACBC3D9219BE3CE000580C6 /* NapLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NapLog.swift; path = SevenSheep/MainTab/History/Model/NapLog.swift; sourceTree = SOURCE_ROOT; };
+		FACBC3DB219BE3DC000580C6 /* WakeUpLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WakeUpLog.swift; path = SevenSheep/MainTab/History/Model/WakeUpLog.swift; sourceTree = SOURCE_ROOT; };
+		FACBC3DD219BE3E4000580C6 /* BedtimeLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BedtimeLog.swift; path = SevenSheep/MainTab/History/Model/BedtimeLog.swift; sourceTree = SOURCE_ROOT; };
+		FACBC3DF219BE3F9000580C6 /* NightWakingLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NightWakingLog.swift; path = SevenSheep/MainTab/History/Model/NightWakingLog.swift; sourceTree = SOURCE_ROOT; };
+		FACBC3E1219BE4D4000580C6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Log.swift; path = SevenSheep/MainTab/History/Model/Log.swift; sourceTree = SOURCE_ROOT; };
+		FACBC3E5219BEE13000580C6 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = History.storyboard; path = ../History/History.storyboard; sourceTree = "<group>"; };
 		FADB4A5421973E5100651C63 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		FAF429BC218AA36200283BA7 /* LogCreation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogCreation.storyboard; sourceTree = "<group>"; };
@@ -354,7 +354,8 @@
 				FACBC3DF219BE3F9000580C6 /* NightWakingLog.swift */,
 				FACBC3E1219BE4D4000580C6 /* Log.swift */,
 			);
-			path = Model;
+			name = Model;
+			path = ../History/Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
