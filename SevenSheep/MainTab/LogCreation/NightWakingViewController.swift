@@ -128,7 +128,8 @@ class NightWakingViewController: FormViewController, LogForm {
                 }.cellUpdate { cell, row in
                     cell.backgroundColor = .white
                     cell.textLabel?.textColor = UIColor(named: "peach")
-                }.onCellSelection() { cell, row in
+                }
+                .onCellSelection() { cell, row in
                     self.dismiss(animated: true, completion: nil)
         }
     }

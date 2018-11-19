@@ -1,90 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HKk-5c-8bb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FPg-PS-2wP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="5re-Qz-z7O">
+        <!--History-->
+        <scene sceneID="XIa-Pq-KvO">
             <objects>
-                <viewController id="6lS-7C-5yA" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OdE-Fx-sMN">
+                <viewController id="naA-6H-uYG" customClass="HistoryTableViewController" customModule="SevenSheep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BTL-D8-GkE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AxX-t3-JIk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2KG-Ul-7SL"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <color key="tintColor" name="peach"/>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gdg-74-mUk"/>
+                        <constraints>
+                            <constraint firstItem="AxX-t3-JIk" firstAttribute="trailing" secondItem="uNu-IA-TM0" secondAttribute="trailing" id="PmT-4N-Nkt"/>
+                            <constraint firstItem="AxX-t3-JIk" firstAttribute="leading" secondItem="uNu-IA-TM0" secondAttribute="leading" id="wSx-TG-fgR"/>
+                            <constraint firstItem="AxX-t3-JIk" firstAttribute="top" secondItem="uNu-IA-TM0" secondAttribute="top" id="yxf-c6-xo0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uNu-IA-TM0"/>
                     </view>
+                    <navigationItem key="navigationItem" title="History" id="EJv-S4-WZB"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gFZ-um-OkZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qjZ-uT-wqs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-154" y="-914"/>
+            <point key="canvasLocation" x="1216.8" y="-209.14542728635683"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="7yM-1t-uQc">
+        <!--History-->
+        <scene sceneID="thn-0y-zRX">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="JfI-Sw-0Nr" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OS7-XH-0Dq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="m50-u3-UwE">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m50-u3-UwE" id="QjI-ta-mmy">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="JfI-Sw-0Nr" id="ePj-s7-SgV"/>
-                            <outlet property="delegate" destination="JfI-Sw-0Nr" id="T3T-IY-Fb5"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="97C-aL-8gm"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KIO-9U-zvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="799" y="-1580"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="56t-aN-GDV">
-            <objects>
-                <navigationController id="v56-fY-x8o" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fQg-mb-9Pv">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FPg-PS-2wP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" image="feed_icon" selectedImage="feed_icon" id="eYS-Z1-yhk"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3gD-HZ-60t">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="JfI-Sw-0Nr" kind="relationship" relationship="rootViewController" id="vXL-3q-kra"/>
+                        <segue destination="naA-6H-uYG" kind="relationship" relationship="rootViewController" id="779-th-OHr"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5G-zn-vfa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSC-AX-r7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-154" y="-1580"/>
-        </scene>
-        <!--History-->
-        <scene sceneID="cTk-m6-9HS">
-            <objects>
-                <splitViewController id="HKk-5c-8bb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" image="feed_icon" selectedImage="feed_icon" id="ak6-2u-ohG"/>
-                    <connections>
-                        <segue destination="v56-fY-x8o" kind="relationship" relationship="masterViewController" id="7DM-ys-gHI"/>
-                        <segue destination="6lS-7C-5yA" kind="relationship" relationship="detailViewController" id="DgJ-cN-hgM"/>
-                    </connections>
-                </splitViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1ef-JX-MM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1107" y="-1247"/>
+            <point key="canvasLocation" x="452" y="-209.14542728635683"/>
         </scene>
     </scenes>
     <resources>
         <image name="feed_icon" width="37.5" height="37.5"/>
+        <namedColor name="peach">
+            <color red="0.95686274509803926" green="0.6705882352941176" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

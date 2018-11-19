@@ -127,10 +127,13 @@ class MorningWakeUpViewController: FormViewController, LogForm {
                 }.cellUpdate { cell, row in
                     cell.backgroundColor = .white
                     cell.textLabel?.textColor = UIColor(named: "peach")
-                }.onCellSelection() { cell, row in
-                    self.dismiss(animated: true, completion: nil)
         }
+        .onCellSelection() { cell, row in
+            self.dismiss(animated: true, completion: nil)
+        }
+        
     }
+    
 }
 
 

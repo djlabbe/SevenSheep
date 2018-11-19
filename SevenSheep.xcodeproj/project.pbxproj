@@ -29,6 +29,7 @@
 		FA869664218436BB00CD2BF1 /* StringToDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA869663218436BB00CD2BF1 /* StringToDate.swift */; };
 		FA8696682184CF4800CD2BF1 /* AddChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8696672184CF4800CD2BF1 /* AddChildViewController.swift */; };
 		FA86966A218523EB00CD2BF1 /* Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA869669218523EB00CD2BF1 /* Child.swift */; };
+		FA877683219E8462000BC665 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA877682219E8462000BC665 /* HistoryViewController.swift */; };
 		FA9EB443218044D200D8B9BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9EB442218044D200D8B9BE /* AppDelegate.swift */; };
 		FA9EB448218044D200D8B9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9EB446218044D200D8B9BE /* Main.storyboard */; };
 		FA9EB44A218044D200D8B9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9EB449218044D200D8B9BE /* Assets.xcassets */; };
@@ -42,8 +43,6 @@
 		FAB5DD5B21819A4500115C2F /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5A21819A4500115C2F /* PasswordViewController.swift */; };
 		FAB5DD5D21819A7200115C2F /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5C21819A7200115C2F /* NameViewController.swift */; };
 		FAB5DD5F21819A8400115C2F /* ChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5E21819A8400115C2F /* ChildrenViewController.swift */; };
-		FACBC3D5219BE351000580C6 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3D4219BE351000580C6 /* MasterViewController.swift */; };
-		FACBC3D7219BE370000580C6 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3D6219BE370000580C6 /* DetailTableViewController.swift */; };
 		FACBC3DA219BE3CE000580C6 /* NapLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3D9219BE3CE000580C6 /* NapLog.swift */; };
 		FACBC3DC219BE3DC000580C6 /* WakeUpLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3DB219BE3DC000580C6 /* WakeUpLog.swift */; };
 		FACBC3DE219BE3E4000580C6 /* BedtimeLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3DD219BE3E4000580C6 /* BedtimeLog.swift */; };
@@ -101,6 +100,7 @@
 		FA869663218436BB00CD2BF1 /* StringToDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToDate.swift; sourceTree = "<group>"; };
 		FA8696672184CF4800CD2BF1 /* AddChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChildViewController.swift; sourceTree = "<group>"; };
 		FA869669218523EB00CD2BF1 /* Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Child.swift; sourceTree = "<group>"; };
+		FA877682219E8462000BC665 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = SevenSheep/MainTab/History/HistoryViewController.swift; sourceTree = SOURCE_ROOT; };
 		FA9EB43F218044D200D8B9BE /* SevenSheep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SevenSheep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA9EB442218044D200D8B9BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA9EB447218044D200D8B9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,14 +120,12 @@
 		FAB5DD5A21819A4500115C2F /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		FAB5DD5C21819A7200115C2F /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		FAB5DD5E21819A8400115C2F /* ChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenViewController.swift; sourceTree = "<group>"; };
-		FACBC3D4219BE351000580C6 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MasterViewController.swift; path = SevenSheep/MainTab/History/MasterViewController.swift; sourceTree = SOURCE_ROOT; };
-		FACBC3D6219BE370000580C6 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailTableViewController.swift; path = ../History/DetailTableViewController.swift; sourceTree = "<group>"; };
 		FACBC3D9219BE3CE000580C6 /* NapLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NapLog.swift; path = SevenSheep/MainTab/History/Model/NapLog.swift; sourceTree = SOURCE_ROOT; };
 		FACBC3DB219BE3DC000580C6 /* WakeUpLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WakeUpLog.swift; path = SevenSheep/MainTab/History/Model/WakeUpLog.swift; sourceTree = SOURCE_ROOT; };
 		FACBC3DD219BE3E4000580C6 /* BedtimeLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BedtimeLog.swift; path = SevenSheep/MainTab/History/Model/BedtimeLog.swift; sourceTree = SOURCE_ROOT; };
 		FACBC3DF219BE3F9000580C6 /* NightWakingLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NightWakingLog.swift; path = SevenSheep/MainTab/History/Model/NightWakingLog.swift; sourceTree = SOURCE_ROOT; };
 		FACBC3E1219BE4D4000580C6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Log.swift; path = SevenSheep/MainTab/History/Model/Log.swift; sourceTree = SOURCE_ROOT; };
-		FACBC3E5219BEE13000580C6 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = History.storyboard; path = ../History/History.storyboard; sourceTree = "<group>"; };
+		FACBC3E5219BEE13000580C6 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		FADB4A5421973E5100651C63 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		FAF429BC218AA36200283BA7 /* LogCreation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogCreation.storyboard; sourceTree = "<group>"; };
@@ -337,12 +335,10 @@
 			isa = PBXGroup;
 			children = (
 				FACBC3D8219BE387000580C6 /* Model */,
-				FACBC3D4219BE351000580C6 /* MasterViewController.swift */,
 				FACBC3E5219BEE13000580C6 /* History.storyboard */,
-				FACBC3D6219BE370000580C6 /* DetailTableViewController.swift */,
+				FA877682219E8462000BC665 /* HistoryViewController.swift */,
 			);
-			name = History;
-			path = "New Group";
+			path = History;
 			sourceTree = "<group>";
 		};
 		FACBC3D8219BE387000580C6 /* Model */ = {
@@ -620,7 +616,6 @@
 				FA11EEAB218558A1009FF208 /* Trim.swift in Sources */,
 				FA9EB47521804BE800D8B9BE /* RootViewController.swift in Sources */,
 				FACBC3DC219BE3DC000580C6 /* WakeUpLog.swift in Sources */,
-				FACBC3D5219BE351000580C6 /* MasterViewController.swift in Sources */,
 				FAF429C1218AAC7F00283BA7 /* NightWakingViewController.swift in Sources */,
 				FA2BFEB82183F75000B32EA3 /* ErrorAlert.swift in Sources */,
 				FACBC3E2219BE4D4000580C6 /* Log.swift in Sources */,
@@ -632,9 +627,9 @@
 				FA8696682184CF4800CD2BF1 /* AddChildViewController.swift in Sources */,
 				FACBC3E0219BE3F9000580C6 /* NightWakingLog.swift in Sources */,
 				FA120F982188317C004F9532 /* LocalCollection.swift in Sources */,
-				FACBC3D7219BE370000580C6 /* DetailTableViewController.swift in Sources */,
 				FAB5DD5B21819A4500115C2F /* PasswordViewController.swift in Sources */,
 				FA9EB47721804BF800D8B9BE /* EmailViewController.swift in Sources */,
+				FA877683219E8462000BC665 /* HistoryViewController.swift in Sources */,
 				FA9EB47921804C0200D8B9BE /* LoginViewController.swift in Sources */,
 				FACBC3DE219BE3E4000580C6 /* BedtimeLog.swift in Sources */,
 				FA9EB443218044D200D8B9BE /* AppDelegate.swift in Sources */,

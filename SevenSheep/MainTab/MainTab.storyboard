@@ -38,17 +38,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WN7-nf-7Us" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-505" y="-364"/>
+            <point key="canvasLocation" x="-455" y="-162"/>
         </scene>
         <!--LogCreation-->
         <scene sceneID="SUi-4q-DJo">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TEt-QI-qNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="LogCreation" id="UCq-km-Kpe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="dGY-je-xaZ"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TEt-QI-qNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-638" y="-438"/>
+            <point key="canvasLocation" x="-610" y="-375"/>
         </scene>
         <!--History-->
         <scene sceneID="iZX-jw-Cr4">
@@ -58,7 +58,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SC5-Oh-c73" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-554" y="-675"/>
+            <point key="canvasLocation" x="-745" y="-810"/>
         </scene>
     </scenes>
 </document>

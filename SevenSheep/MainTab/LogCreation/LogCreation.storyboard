@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Log Sleep-->
+        <!--Log-->
         <scene sceneID="JB2-QL-I5N">
             <objects>
                 <viewController id="sT8-2H-4nC" customClass="LogSelectViewController" customModule="SevenSheep" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,7 +35,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="QZU-7c-S3e" kind="presentation" identifier="wakeup" id="hEd-yf-2Y6"/>
+                                                            <segue destination="QZU-7c-S3e" kind="show" identifier="wakeup" id="hEd-yf-2Y6"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0xP-V5-svt">
@@ -45,7 +45,7 @@
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="QZU-7c-S3e" kind="presentation" id="gjv-ty-zaC"/>
+                                                            <segue destination="QZU-7c-S3e" kind="show" id="gjv-ty-zaC"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -74,7 +74,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="w5P-Bf-0oV" kind="presentation" id="nYl-Yz-NAk"/>
+                                                            <segue destination="w5P-Bf-0oV" kind="show" id="nYl-Yz-NAk"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GH8-IE-dCM">
@@ -84,7 +84,7 @@
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="w5P-Bf-0oV" kind="presentation" id="hpP-5y-R4P"/>
+                                                            <segue destination="w5P-Bf-0oV" kind="show" id="hpP-5y-R4P"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -130,7 +130,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="ksr-7U-EVc" kind="presentation" id="Npf-2V-nzD"/>
+                                                            <segue destination="ksr-7U-EVc" kind="show" id="Npf-2V-nzD"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgR-gA-W6t">
@@ -140,7 +140,7 @@
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="ksr-7U-EVc" kind="presentation" id="wb4-Cs-6Sr"/>
+                                                            <segue destination="ksr-7U-EVc" kind="show" id="wb4-Cs-6Sr"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -169,7 +169,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="Emc-2S-5GT" kind="presentation" id="U98-C6-Hyi"/>
+                                                            <segue destination="Emc-2S-5GT" kind="show" id="U98-C6-Hyi"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qd-6W-s4D">
@@ -179,7 +179,7 @@
                                                             <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="Emc-2S-5GT" kind="presentation" id="VYI-lj-TOs"/>
+                                                            <segue destination="Emc-2S-5GT" kind="show" id="VYI-lj-TOs"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -227,7 +227,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iBW-2x-4Mm"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Log Sleep" id="3Tv-Db-Ny7"/>
+                    <navigationItem key="navigationItem" title="Log" id="3Tv-Db-Ny7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GdQ-7G-PXY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -330,7 +330,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="VYI-lj-TOs"/>
-        <segue reference="wb4-Cs-6Sr"/>
+        <segue reference="Npf-2V-nzD"/>
         <segue reference="hpP-5y-R4P"/>
         <segue reference="hEd-yf-2Y6"/>
     </inferredMetricsTieBreakers>
