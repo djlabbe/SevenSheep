@@ -7,20 +7,34 @@
 //
 
 import Foundation
+import Firebase
 
-class WakeUpLog : Log {
+struct WakeUpLog : Log {
+    
+    static let wakeUptype = "Wake-up"
+    
+    let type = wakeUptype
+    
+    var childId: String
+    var childName: String
+    var date: Date
+    var notes: String
     var wakeTime: Date
     var outOfBedTime:  Date
     
-    init (childId id: String, childName name:String, date:Date, wakeTime:Date, outOfBedTime:Date, notes:String) {
+    init (childId id: String, childName name:String, date:Date, wakeTime:Date, outOfBedTime:Date, notes:String){
+        self.childId = id
+        self.childName = name
+        self.date = date
+        self.notes = notes
         self.wakeTime = wakeTime
         self.outOfBedTime = outOfBedTime
-        super.init(childId: id, childName: name, date: date, notes: notes)
     }
     
     var dictionary: [String: Any] {
         
         return [
+            "type": type,
             "childId": childId,
             "childName": childName,
             "date": date,
@@ -28,5 +42,25 @@ class WakeUpLog : Log {
             "wakeTime": wakeTime,
             "outOfBedTime": outOfBedTime
         ]
+    }
+}
+
+extension WakeUpLog: DocumentSerializable {
+    
+    init?(dictionary: [String : Any]) {
+        guard let childId = dictionary["childId"] as? String,
+            let childName = dictionary["childName"] as? String,
+            let date = dictionary["date"] as? Timestamp,
+            let notes = dictionary["notes"] as? String,
+            let wakeTime = dictionary["wakeTime"] as? Timestamp,
+            let outOfBedTime = dictionary["outOfBedTime"] as? Timestamp
+            else { return nil }
+        
+        self.init(childId: childId,
+                  childName: childName,
+                  date: date.dateValue(),
+                  wakeTime: wakeTime.dateValue(),
+                  outOfBedTime: outOfBedTime.dateValue(),
+                  notes: notes)
     }
 }

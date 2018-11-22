@@ -21,7 +21,7 @@
                         <color key="selectedImageTintColor" red="0.8987568829" green="0.4759999077" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="iRH-RD-iSS" kind="relationship" relationship="viewControllers" id="m7b-Nh-Sdz"/>
+                        <segue destination="A59-b7-swC" kind="relationship" relationship="viewControllers" id="r8o-BL-hRe"/>
                         <segue destination="UCq-km-Kpe" kind="relationship" relationship="viewControllers" id="FvC-8R-97l"/>
                         <segue destination="vVl-K1-6i8" kind="relationship" relationship="viewControllers" id="p8q-QK-4Mr"/>
                     </connections>
@@ -38,7 +38,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WN7-nf-7Us" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-455" y="-162"/>
+            <point key="canvasLocation" x="-630" y="-144"/>
         </scene>
         <!--LogCreation-->
         <scene sceneID="SUi-4q-DJo">
@@ -51,14 +51,14 @@
             <point key="canvasLocation" x="-610" y="-375"/>
         </scene>
         <!--History-->
-        <scene sceneID="iZX-jw-Cr4">
+        <scene sceneID="YAS-Kp-Hzf">
             <objects>
-                <viewControllerPlaceholder storyboardName="History" id="iRH-RD-iSS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="8cs-B3-gE0"/>
+                <viewControllerPlaceholder storyboardName="History" id="A59-b7-swC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="PUo-sO-7Gt"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SC5-Oh-c73" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bTg-DV-Px6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-745" y="-810"/>
+            <point key="canvasLocation" x="-658" y="-587"/>
         </scene>
     </scenes>
 </document>

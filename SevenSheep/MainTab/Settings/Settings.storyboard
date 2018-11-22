@@ -144,12 +144,27 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="g9q-sk-qy9"/>
                     <connections>
-                        <segue destination="dJj-Me-xup" kind="presentation" identifier="changePassword" id="0ta-5s-4gd"/>
+                        <segue destination="Wmh-Ej-Mr5" kind="presentation" identifier="changePassword" id="ouJ-i6-JeR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BHC-ri-JvH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="184.80000000000001" y="17.541229385307346"/>
+        </scene>
+        <!--Change Password View Controller-->
+        <scene sceneID="efg-X2-Kgb">
+            <objects>
+                <viewController id="Wmh-Ej-Mr5" customClass="EChangePasswordViewController" customModule="SevenSheep" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="092-fC-AmI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q3A-jt-ggZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j0D-WQ-VVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="-4"/>
         </scene>
         <!--Change Password View Controller-->
         <scene sceneID="ZEd-fT-mAC">
@@ -246,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wW-GI-RKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1122" y="-82"/>
+            <point key="canvasLocation" x="1118" y="-787"/>
         </scene>
     </scenes>
     <resources>
