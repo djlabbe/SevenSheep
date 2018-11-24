@@ -42,6 +42,7 @@
 		FAB5DD5B21819A4500115C2F /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5A21819A4500115C2F /* PasswordViewController.swift */; };
 		FAB5DD5D21819A7200115C2F /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5C21819A7200115C2F /* NameViewController.swift */; };
 		FAB5DD5F21819A8400115C2F /* ChildrenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB5DD5E21819A8400115C2F /* ChildrenViewController.swift */; };
+		FABDC7C621A9AA5500720EF9 /* LogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABDC7C521A9AA5500720EF9 /* LogDetailViewController.swift */; };
 		FAC8185621A3D35A00105630 /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC8185521A3D35A00105630 /* History.storyboard */; };
 		FAC8185A21A3D3E100105630 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8185921A3D3E100105630 /* MasterViewController.swift */; };
 		FAC8185C21A3D3F300105630 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8185B21A3D3F300105630 /* DetailViewController.swift */; };
@@ -121,6 +122,7 @@
 		FAB5DD5A21819A4500115C2F /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		FAB5DD5C21819A7200115C2F /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		FAB5DD5E21819A8400115C2F /* ChildrenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenViewController.swift; sourceTree = "<group>"; };
+		FABDC7C521A9AA5500720EF9 /* LogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogDetailViewController.swift; sourceTree = "<group>"; };
 		FAC8185521A3D35A00105630 /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = History.storyboard; sourceTree = "<group>"; };
 		FAC8185921A3D3E100105630 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		FAC8185B21A3D3F300105630 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				FAC8185521A3D35A00105630 /* History.storyboard */,
 				FAC8185921A3D3E100105630 /* MasterViewController.swift */,
 				FAC8185B21A3D3F300105630 /* DetailViewController.swift */,
+				FABDC7C521A9AA5500720EF9 /* LogDetailViewController.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -639,6 +642,7 @@
 				FAB5DD5B21819A4500115C2F /* PasswordViewController.swift in Sources */,
 				FA9EB47721804BF800D8B9BE /* EmailViewController.swift in Sources */,
 				FA9EB47921804C0200D8B9BE /* LoginViewController.swift in Sources */,
+				FABDC7C621A9AA5500720EF9 /* LogDetailViewController.swift in Sources */,
 				FACBC3DE219BE3E4000580C6 /* BedtimeLog.swift in Sources */,
 				FA9EB443218044D200D8B9BE /* AppDelegate.swift in Sources */,
 				FA869664218436BB00CD2BF1 /* StringToDate.swift in Sources */,

@@ -12,6 +12,7 @@ import Firebase
 struct NapLog : Log  {
     
     static let napType = "Nap"
+    static let color = UIColor.init(named: "afternoon-color")
     
     let type = napType
     

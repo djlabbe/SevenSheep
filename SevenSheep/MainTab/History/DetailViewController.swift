@@ -10,6 +10,15 @@ import UIKit
 import Firebase
 import SVProgressHUD
 
+class LogCell: UITableViewCell {
+    @IBOutlet weak var borderImage: UIImageView!
+    @IBOutlet weak var typeLabel: UILabel!
+    
+    @IBOutlet weak var time1Label: UILabel!
+    @IBOutlet weak var time2Label: UILabel!
+    @IBOutlet weak var time3Label: UILabel!
+}
+
 class DetailViewController: UITableViewController {
     
     let db = Firestore.firestore()
@@ -17,16 +26,13 @@ class DetailViewController: UITableViewController {
     var childId: String?
     
     var allLogs:[Log] = []
+    var selectedLog: Log?
     
     var tableData = [LogTableSection]()
     
     struct LogTableSection {
         var date : String!
         var logs : [Log]!
-    }
-    
-    func dateExists(_ date: String) -> Bool {
-        return tableData.contains(where: { $0.date == date })
     }
     
     override func viewDidLoad() {
@@ -42,6 +48,7 @@ class DetailViewController: UITableViewController {
                         return
                     }
                     
+                    self.allLogs.removeAll()
                     self.tableData.removeAll()
                     
                     for doc in documents {
@@ -85,61 +92,80 @@ class DetailViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "log", for: indexPath)
-        cell.textLabel!.text = tableData[indexPath.section].logs[indexPath.row].childName
+        let cell = tableView.dequeueReusableCell(withIdentifier: "log", for: indexPath) as! LogCell
+        
+        let log = tableData[indexPath.section].logs[indexPath.row]
+        cell.borderImage.backgroundColor = getColorForType(log.type)
+        cell.typeLabel.text = log.type
+        setTimeLabelsForCell(cell: cell, log: log)
         return cell
+    }
+    
+    func setTimeLabelsForCell(cell: LogCell, log: Log) {
+        switch log.type {
+        case NapLog.napType:
+            let napLog = log as! NapLog
+            cell.time1Label.text = "In bed - \(napLog.inBedTime.toShortUSTimeString())"
+            cell.time2Label.text = "Asleep - \(napLog.asleepTime.toShortUSTimeString())"
+            cell.time3Label.text = "Awake - \(napLog.wakeTime.toShortUSTimeString())"
+        case WakeUpLog.wakeUptype:
+            let wakeUpLog = log as! WakeUpLog
+            cell.time1Label.text = "Awake - \(wakeUpLog.wakeTime.toShortUSTimeString())"
+            cell.time2Label.text = "Out of bed - \(wakeUpLog.outOfBedTime.toShortUSTimeString())"
+            cell.time3Label.text = ""
+        case BedtimeLog.bedTimeType:
+            let bedtimeLog = log as! BedtimeLog
+            cell.time1Label.text = "Start - \(bedtimeLog.startTime.toShortUSTimeString())"
+            cell.time2Label.text = "In bed - \(bedtimeLog.inBedTime.toShortUSTimeString())"
+            cell.time3Label.text = "Asleep - \(bedtimeLog.asleepTime.toShortUSTimeString())"
+        case NightWakingLog.nightWakingType:
+            let nightWakingLog = log as! NightWakingLog
+            cell.time1Label.text = "Awake - \(nightWakingLog.wakeTime.toShortUSTimeString())"
+            cell.time2Label.text = "Back to sleep - \(nightWakingLog.asleepTime.toShortUSTimeString())"
+            cell.time3Label.text = ""
+        default:
+            cell.time1Label.text = ""
+            cell.time2Label.text = ""
+            cell.time3Label.text = ""
+        }
+    }
+    
+    func getColorForType(_ type: String) -> UIColor {
+        switch type {
+        case NapLog.napType:
+            return NapLog.color ?? .white
+        case WakeUpLog.wakeUptype:
+            return WakeUpLog.color ?? .white
+        case BedtimeLog.bedTimeType:
+            return BedtimeLog.color ?? .white
+        case NightWakingLog.nightWakingType:
+            return NightWakingLog.color ?? .white
+        default:
+            return .white
+        }
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return tableData[section].date
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
     
     
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.selectedLog = tableData[indexPath.section].logs[indexPath.row]
+    }
     
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? LogDetailViewController{
+            destination.log = selectedLog
+        }
      }
-     */
     
 }
 

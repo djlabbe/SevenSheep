@@ -12,6 +12,7 @@ import Firebase
 struct BedtimeLog : Log {
 
     static let bedTimeType = "Bedtime"
+    static let color = UIColor.init(named: "evening-color")
     
     let type = bedTimeType
     

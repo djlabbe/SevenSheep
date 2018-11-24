@@ -12,6 +12,7 @@ import Firebase
 struct NightWakingLog : Log {
     
     static let nightWakingType = "Night Waking"
+    static let color = UIColor.init(named: "night-color")
     
     let type = nightWakingType
     
