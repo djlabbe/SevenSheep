@@ -19,6 +19,7 @@ class MasterViewController: UITableViewController, UISplitViewControllerDelegate
     
     var childData:[(id: String, name: String, gender: String)] = []
     var selectedChildId: String?
+    var selectedChildName: String?
     let db = Firestore.firestore()
     
     override func awakeFromNib() {
@@ -26,7 +27,6 @@ class MasterViewController: UITableViewController, UISplitViewControllerDelegate
         splitViewController?.delegate = self
     }
     
-
     func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
         
         if let detailNavController = secondaryViewController as? UINavigationController {
@@ -50,6 +50,7 @@ class MasterViewController: UITableViewController, UISplitViewControllerDelegate
                         return
                     }
                     self.childData = documents.map { ($0.documentID, $0["name"] as! String, $0["gender"] as! String) }
+                    
                     self.tableView.reloadData()
             }
             
@@ -83,6 +84,7 @@ class MasterViewController: UITableViewController, UISplitViewControllerDelegate
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedChildId = childData[indexPath.row].id
+        selectedChildName = childData[indexPath.row].name
         self.performSegue(withIdentifier: "showDetail", sender: self)
     }
 
@@ -94,6 +96,7 @@ class MasterViewController: UITableViewController, UISplitViewControllerDelegate
         
         if let vc = destinationNav!.topViewController as? DetailViewController {
             vc.childId = selectedChildId
+            vc.childName = selectedChildName
         }
         
     }

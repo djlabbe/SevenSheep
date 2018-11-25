@@ -11,10 +11,11 @@ import UIKit
 class LogDetailViewController: UIViewController {
 
     var log: Log?
+    @IBOutlet weak var notesLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = log?.childName
+        notesLabel.text = log?.notes == "" ? "No notes recorded" : log?.notes
     }
     
 

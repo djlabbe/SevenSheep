@@ -11,7 +11,8 @@ import Firebase
 import SVProgressHUD
 
 class LogCell: UITableViewCell {
-    @IBOutlet weak var borderImage: UIImageView!
+    
+    @IBOutlet weak var borderColor: UIView!
     @IBOutlet weak var typeLabel: UILabel!
     
     @IBOutlet weak var time1Label: UILabel!
@@ -24,6 +25,7 @@ class DetailViewController: UITableViewController {
     let db = Firestore.firestore()
     
     var childId: String?
+    var childName: String?
     
     var allLogs:[Log] = []
     var selectedLog: Log?
@@ -37,6 +39,8 @@ class DetailViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = childName
         
         if (Auth.auth().currentUser?.uid) != nil {
             SVProgressHUD.show()
@@ -70,13 +74,15 @@ class DetailViewController: UITableViewController {
                     }
                     
                     let data = Dictionary(grouping: self.allLogs, by: {$0.date.toUSDate()})
-                 
+                    
+                    
                     for (key, value) in data {
                         self.tableData.append(LogTableSection(date: key, logs: value))
                     }
                     
-                    self.tableView.reloadData()
+                    self.tableData.sort(by: { $0.date > $1.date })
                     
+                    self.tableView.reloadData()
             }
         }
     }
@@ -93,9 +99,8 @@ class DetailViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "log", for: indexPath) as! LogCell
-        
         let log = tableData[indexPath.section].logs[indexPath.row]
-        cell.borderImage.backgroundColor = getColorForType(log.type)
+        cell.borderColor.backgroundColor = getColorForType(log.type)
         cell.typeLabel.text = log.type
         setTimeLabelsForCell(cell: cell, log: log)
         return cell
@@ -156,6 +161,7 @@ class DetailViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.selectedLog = tableData[indexPath.section].logs[indexPath.row]
+        self.performSegue(withIdentifier: "showNotes", sender: self)
     }
     
      // MARK: - Navigation

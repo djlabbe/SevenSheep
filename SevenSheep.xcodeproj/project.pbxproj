@@ -54,7 +54,6 @@
 		FACBC3E2219BE4D4000580C6 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACBC3E1219BE4D4000580C6 /* Log.swift */; };
 		FADB4A5521973E5100651C63 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4A5421973E5100651C63 /* MainTabBarViewController.swift */; };
 		FADB4A572197DF0E00651C63 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */; };
-		FAF429BD218AA36200283BA7 /* LogCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF429BC218AA36200283BA7 /* LogCreation.storyboard */; };
 		FAF429C1218AAC7F00283BA7 /* NightWakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF429C0218AAC7F00283BA7 /* NightWakingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -134,7 +133,6 @@
 		FACBC3E1219BE4D4000580C6 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Log.swift; path = SevenSheep/MainTab/History/Model/Log.swift; sourceTree = SOURCE_ROOT; };
 		FADB4A5421973E5100651C63 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FADB4A562197DF0E00651C63 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
-		FAF429BC218AA36200283BA7 /* LogCreation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogCreation.storyboard; sourceTree = "<group>"; };
 		FAF429C0218AAC7F00283BA7 /* NightWakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightWakingViewController.swift; sourceTree = "<group>"; };
 		FC004118E223ACCC4C3BD342 /* Pods-SevenSheepTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SevenSheepTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SevenSheepTests/Pods-SevenSheepTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -217,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				FA86966021841EB700CD2BF1 /* LogSelectViewController.swift */,
-				FAF429BC218AA36200283BA7 /* LogCreation.storyboard */,
 				FA869658218417BD00CD2BF1 /* MorningWakeUpViewController.swift */,
 				FA86965B218417C400CD2BF1 /* BedtimeViewController.swift */,
 				FA86965A218417C400CD2BF1 /* NapViewController.swift */,
@@ -471,7 +468,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF429BD218AA36200283BA7 /* LogCreation.storyboard in Resources */,
 				FA9EB4732180478800D8B9BE /* Registration.storyboard in Resources */,
 				FA9EB44D218044D200D8B9BE /* LaunchScreen.storyboard in Resources */,
 				FAC8185621A3D35A00105630 /* History.storyboard in Resources */,
